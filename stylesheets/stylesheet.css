@@ -69,7 +69,8 @@ header {
 }
 
 header h1 {
-  font-family: 'Chivo', 'Helvetica Neue', Helvetica, Arial, serif; font-weight: 900;
+  text-align: center;
+  font-family: 'Helvetica Neue', Helvetica, Arial, serif; font-weight: 900;
   letter-spacing: -1px;
   font-size: 48px;
   color: #303030;
@@ -77,6 +78,7 @@ header h1 {
 }
 
 header h2 {
+  text-align: center;
   letter-spacing: -1px;
   font-size: 24px;
   color: #aaa;
@@ -90,7 +92,7 @@ header h2 {
 }
 
 .inner {
-  width: 620px;
+  width: 820px;
   margin: 0 auto;
 }
 
@@ -114,7 +116,7 @@ a.button {
   line-height: 25px;
   font-weight: bold;
   font-size: 15px;
-  padding: 12px 8px 12px 8px;
+  padding: 12px 41px 12px 41px;
   display: block;
   float: left;
   width: 179px;
@@ -194,6 +196,32 @@ pre code {
 
 ul, ol, dl {
   margin-bottom: 20px;
+}
+
+
+/* Features list. */
+ul.featurelist {
+  list-style: none;
+}
+
+ul.featurelist li.feature {
+  display: inline-block;
+  width: 33%;
+  padding-left: 0;
+  float: left;
+  position: relative;
+}
+
+ul.featurelist li.feature span.title {
+  display: block;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  color: #777;
+}
+
+ul.featurelist li.feature img {
+  max-width: 80%;
 }
 
 
