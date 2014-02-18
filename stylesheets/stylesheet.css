@@ -224,7 +224,8 @@ ul, ol, dl {
 }
 
 .feature img {
-  max-width: 80%;
+  display: block;
+  margin: auto;
 }
 
 
