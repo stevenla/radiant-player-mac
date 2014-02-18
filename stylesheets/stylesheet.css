@@ -204,28 +204,26 @@ ul, ol, dl {
 }
 
 
-/* Features list. */
-ul.featurelist {
-  list-style: none;
+/* Features */
+.feature {
+  width: 75%;
+  margin: auto;
 }
 
-ul.featurelist li.feature {
-  display: inline-block;
-  width: 33%;
-  padding-left: 0;
-  float: left;
-  position: relative;
-}
-
-ul.featurelist li.feature span.title {
+.feature span.title {
   display: block;
+  text-transform: uppercase;
   text-align: center;
-  font-size: 18px;
-  font-weight: bold;
+  font-size: 22px;
   color: #777;
 }
 
-ul.featurelist li.feature img {
+.feature p.description {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.feature img {
   max-width: 80%;
 }
 
