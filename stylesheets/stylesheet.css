@@ -106,7 +106,6 @@ header h2 {
 }
 
 #downloads {
-  padding-bottom: 30px;
   width: 500px;
   margin: auto;
 }
@@ -207,6 +206,14 @@ a.button span {
 #view-on-github {
   margin-right: 0;
   float: right;
+}
+
+#requirements {
+  display: block;
+  text-align: center;
+  color: #777;
+  font-size: 12px;
+  padding-top: 10px;
 }
 
 code, pre {
