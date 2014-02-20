@@ -106,13 +106,15 @@ header h2 {
 }
 
 #downloads {
-  margin-bottom: 40px;
+  padding-bottom: 30px;
+  width: 500px;
+  margin: auto;
 }
 
 a.button {
-  -moz-border-radius: 30px;
-  -webkit-border-radius: 30px;                     
-  border-radius: 30px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;                     
+  border-radius: 3px;
   border-top: solid 1px #cbcbcb;
   border-left: solid 1px #b7b7b7;
   border-right: solid 1px #b7b7b7;
@@ -121,7 +123,7 @@ a.button {
   line-height: 25px;
   font-weight: bold;
   font-size: 15px;
-  padding: 12px 41px 12px 41px;
+  padding: 12px 30px 12px 30px;
   display: block;
   float: left;
   width: 179px;
@@ -159,17 +161,52 @@ a.button span {
   height: 23px;
 }
 
+#download-zip {
+  border-top: solid 1px #F08033;
+  border-left: solid 1px #F07733;
+  border-right: solid 1px #F07733;
+  border-bottom: solid 1px #EE7733;
+  
+  background: #F08833; /* Old browsers */
+  background: -moz-linear-gradient(top,  #F29A33 0%, #EE7733 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#F29A33), color-stop(100%,#EE7733)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top,  #F29A33 0%,#EE7733 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top,  #F29A33 0%,#EE7733 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top,  #F29A33 0%,#EE7733 100%); /* IE10+ */
+  background: linear-gradient(top,  #F29A33 0%,#EE7733 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#F29A33', endColorstr='#EE7733',GradientType=0 ); /* IE6-9 */
+  
+  color: white;
+  text-shadow: none;
+  border: 1px solid #EE7733;
+}
+
+#download-zip:hover {
+  border-top: solid 1px #F08033;
+  border-left: solid 1px #EE7733;
+  border-right: solid 1px #EE7733;
+  border-bottom: solid 1px #EE7733;
+  
+  background: #F29A33; /* Old browsers */
+  background: -moz-linear-gradient(top,  #F29A33 0%, #F08833 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#F29A33), color-stop(100%,#F08833)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top,  #F29A33 0%,#F08833 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top,  #F29A33 0%,#F08833 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top,  #F29A33 0%,#F08833 100%); /* IE10+ */
+  background: linear-gradient(top,  #F29A33 0%,#F08833 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#F29A33', endColorstr='#F08833',GradientType=0 ); /* IE6-9 */
+}
+
 #download-zip span {
-  background: transparent url(../images/zip-icon.png) 12px 50% no-repeat;
+  background: transparent url(../images/app-icon.png) 12px 50% no-repeat;
 }
-#download-tar-gz span {
-  background: transparent url(../images/tar-gz-icon.png) 12px 50% no-repeat;
-}
+
 #view-on-github span {
   background: transparent url(../images/octocat-icon.png) 12px 50% no-repeat;
 }
 #view-on-github {
   margin-right: 0;
+  float: right;
 }
 
 code, pre {
