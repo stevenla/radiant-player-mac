@@ -216,6 +216,13 @@ a.button span {
   padding-top: 10px;
 }
 
+#requirements a {
+  font-size: 12px;
+  font-weight: bold;
+  display: block;
+  margin-bottom: 6px;
+}
+
 code, pre {
   font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal;
   color: #222;
