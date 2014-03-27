@@ -73,13 +73,9 @@ header h1 {
   font-family: 'Helvetica Neue', Helvetica, Arial, serif; 
   font-weight: 200;
   letter-spacing: -1px;
-  font-size: 48px;
+  font-size: 52px;
   color: #303030;
   line-height: 1.2;
-}
-
-header h1 strong {
-  font-weight: 500;
 }
 
 header h2 {
@@ -97,7 +93,7 @@ header h2 {
 }
 
 .inner {
-  width: 860px;
+  width: 960px;
   margin: 0 auto;
 }
 
@@ -277,6 +273,17 @@ ul, ol, dl {
 .feature img {
   display: block;
   margin: auto;
+}
+
+#mini-player {
+  margin-left: -65px;
+  width: 115%;
+  text-align: center;
+}
+
+#mini-player img {
+  display: inline-block;
+  vertical-align: top;
 }
 
 
