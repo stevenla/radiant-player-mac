@@ -212,11 +212,32 @@ a.button span {
   padding-top: 10px;
 }
 
-#requirements a {
+#release-notes a#release-notes-link {
   font-size: 12px;
   font-weight: bold;
   display: block;
   margin-bottom: 6px;
+  text-align: center;
+  color: #d5000d;
+}
+
+#release-notes {
+  width: 500px;
+  margin: 20px auto;
+  text-align: left;
+  background-color: #ddd;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+#release-notes p, #release-notes ul {
+  margin-bottom: 5px;
+}
+
+#release-notes a {
+  color: #555;
+  font-weight: bold;
 }
 
 code, pre {
