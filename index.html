@@ -7,6 +7,7 @@
     <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen" />
     <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen" />
     <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print" />
+    <link rel="stylesheet" type="text/css" href="slick/slick.css" media="screen" />
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
@@ -25,11 +26,11 @@
         </header>
 
         <section id="downloads" class="clearfix">
-          <a href="https://github.com/kbhomes/google-music-mac/releases/download/v1.1.2/Radiant.Player.zip" id="download-zip" class="button"><span>Download v1.1.2</span></a>
+          <a href="https://github.com/kbhomes/google-music-mac/releases/download/v1.1.3/Radiant.Player.zip" id="download-zip" class="button"><span>Download v1.1.3</span></a>
           <a href="https://github.com/kbhomes/google-music-mac" id="view-on-github" class="button"><span>View on GitHub</span></a>
         </section>
         <span id="requirements">
-          <a href="https://github.com/kbhomes/google-music-mac/releases/tag/v1.1.2">View release notes.</a>
+          <a href="https://github.com/kbhomes/google-music-mac/releases/tag/v1.1.3">View release notes.</a>
           <strong>No affiliation with Google.</strong> Requires Mac OS X 10.8 or above, and Adobe Flash Player.
         </span>
 
@@ -75,7 +76,8 @@
             <p class="description">
               Update your Now Playing status and scrobble tracks to Last.fm.
             </p>
-            <a href="http://last.fm"><img src="images/lastfm.png" width="250"></a>
+            <!-- <a href="http://last.fm"><img src="images/lastfm.png" width="250"></a> -->
+            <a href="images/lastfm-button.png"><img src="images/lastfm-button.png"></a>
           </section>
 
           <hr>
@@ -83,10 +85,16 @@
           <section class="feature clearfix">
             <span class="title">Adjustable appearance</span>
             <p class="description">
-              Use the custom appearance built into <strong>Radiant Player</strong> to make it look 
+              Use custom styles built into <strong>Radiant Player</strong> to make it look 
               beautiful and integrated into your system, or stick with Google's original theme.
             </p>
-            <a href="images/appearance.png"><img src="images/appearance.png"></a>
+            <div id="styles">
+              <div><a href="images/styles/google.png"><img src="images/styles/google.png"></a><span>Google</span></div>
+              <div><a href="images/styles/cocoa.png"><img src="images/styles/cocoa.png"></a><span>Cocoa</span></div>
+              <div><a href="images/styles/spotify-black.png"><img src="images/styles/spotify-black.png"></a><span>Spotify Black</span></div>
+              <div><a href="images/styles/dark.png"><img src="images/styles/dark.png"></a><span>Dark</span></div>
+              <div><a href="images/styles/dark-flat.png"><img src="images/styles/dark-flat.png"></a><span>Dark Flat</span></div>
+            </div>
           </section>
         </section>
 
@@ -99,5 +107,17 @@
         
       </div>
     </div>
+
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+
+    <script type="text/javascript">
+        $('#styles').slick({
+          infinite: false,
+          slidesToShow: 2,
+          slidesToScroll: 1
+        });
+    </script>
   </body>
 </html>

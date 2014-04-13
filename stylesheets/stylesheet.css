@@ -286,6 +286,18 @@ ul, ol, dl {
   vertical-align: top;
 }
 
+#styles {
+  margin-left: -100px;
+  margin-right: -100px;
+}
+
+#styles span {
+  font-style: italic;
+  font-size: 13px;
+  text-align: center;
+  display: block;
+}
+
 
 /* COMMON STYLES */
 
