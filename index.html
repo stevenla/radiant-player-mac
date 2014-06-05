@@ -27,7 +27,7 @@
 
         <section id="downloads" class="clearfix">
           <a href="https://github.com/kbhomes/google-music-mac" id="view-on-github" class="button"><span>View on GitHub</span></a>
-          <a href="https://github.com/kbhomes/google-music-mac/releases/download/v1.1.3/Radiant.Player.zip" id="download-zip" class="button"><span>Download v1.1.3</span></a>
+          <a href="https://github.com/kbhomes/google-music-mac/releases/download/v1.2.0/Radiant.Player.zip" id="download-zip" class="button"><span>Download v1.2.0</span></a>
           <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
             <input type="hidden" name="cmd" value="_donations">
             <input type="hidden" name="business" value="sajidanwar94@gmail.com">
@@ -46,24 +46,29 @@
         <span id="requirements">
           <strong>No affiliation with Google.</strong> Requires Mac OS X 10.8 or above, and Adobe Flash Player.
           <div id="release-notes">
-            <a id="release-notes-link" href="https://github.com/kbhomes/google-music-mac/releases/tag/v1.1.3">Release notes for Radiant Player v1.1.3:</a>
-            
+            <a id="release-notes-link" href="https://github.com/kbhomes/google-music-mac/releases/tag/v1.2.0">Release notes for Radiant Player v1.2.0:</a>
+
+            <p>Lots of new features! In this release, the project has also finally completed the transition from <code>google-music-mac</code> to the name <code>radiant-player-mac</code>.</p>
+
             <p>New features:</p>
             <ul>
-              <li>New theme: <a href="http://kbhomes.github.io/google-music-mac/images/styles/dark-flat.png" class="hoverZoomLink">Dark Flat</a> (thanks to <a href="https://github.com/hoffi" class="user-mention">@hoffi</a>)</li>
-              <li>New theme: <a href="http://kbhomes.github.io/google-music-mac/images/styles/spotify-black.png" class="hoverZoomLink">Spotify Black</a> (thanks to <a href="https://github.com/tonybaroneee" class="user-mention">@tonybaroneee</a>)</li>
-              <li>Last.fm button that shows a popover with your most recent tracks (<a href="http://kbhomes.github.io/google-music-mac/images/lastfm-button.png" class="hoverZoomLink">preview</a>)</li>
-              <li>Ability to automatically love/unlove a track on Last.fm based on the song's rating (thumbs up/down)</li>
-              <li>Ability to hide the Google apps and notifications buttons</li>
+              <li>Separate cookie storage from Safari by default (for OS X 10.9 and above only)</li>
+              <li>Support 5-star rating system (in Google Play Music labs) with style fixes, 5-star rating controls in the menu and in the mini player</li>
+              <li>Show playing status in mini player's icon</li>
+              <li>Optionally use Growl notifications instead of Notification Center if Growl is available</li>
+              <li>Pause music when system sleeps</li>
             </ul>
 
             <p>Fixes:</p>
             <ul>
-              <li>Multiple fixes for proper Mac OS X 10.8 support</li>
-              <li>Fix: don't accidentally break Quick Look due to media keys support (fixes <a href="https://github.com/kbhomes/google-music-mac/issues/117" class="issue-link" title="this app disables the system wide &quot;look up&quot; gesture (three finger tap)">#117</a>)</li>
-              <li>Fix: performance of dark styles dramatically improved (fixes <a href="https://github.com/kbhomes/google-music-mac/issues/90" class="issue-link" title="Dark style has poor performance">#90</a>, <a href="https://github.com/kbhomes/google-music-mac/issues/120" class="issue-link" title="CPU 98%">#120</a>)</li>
-              <li>Fix: mini player supports multiple screens, edge of current screen (fixes <a href="https://github.com/kbhomes/google-music-mac/issues/108" class="issue-link" title="Mini player doesn't behave properly on multiple screens, or when icon is too close to edge of screen">#108</a>)</li>
+              <li>Prevent usage of discrete GPU (fixes <a href="https://github.com/kbhomes/radiant-player-mac/pull/142" class="issue-link" title="No longer depends on high performance GPU.">#142</a>)</li>
+              <li>Fix bugs related to application of navigation features and account information (fixes <a href="https://github.com/kbhomes/radiant-player-mac/issues/151" class="issue-link" title="Can't log out / switch users">#151</a>, <a href="https://github.com/kbhomes/radiant-player-mac/pull/157" class="issue-link" title="Fix: always show user information">#157</a>, <a href="https://github.com/kbhomes/radiant-player-mac/pull/158" class="issue-link" title="Can't hide navigation elements when next/back are disabled (and fix)">#158</a>)</li>
+              <li>Fix bugs related to erratic movement of Radiant Player window when dragging (fixes <a href="https://github.com/kbhomes/radiant-player-mac/issues/168" class="issue-link" title="Better AppleScript bridge and capabilities">#168</a>)</li>
+              <li>Prevent full screen when in no-dock-icon mode (fixes <a href="https://github.com/kbhomes/radiant-player-mac/issues/152" class="issue-link" title="upon removing menu bar, it's impossible to get back.">#152</a>, <a href="https://github.com/kbhomes/radiant-player-mac/issues/153" class="issue-link" title="Unable to close full screen when dock icon hidden">#153</a>)</li>
+              <li>Fix title bar text colors of certain styles (fixes <a href="https://github.com/kbhomes/radiant-player-mac/issues/135" class="issue-link" title="Radiant Player application title is hard to read when using the Spotify Black theme">#135</a>)</li>
             </ul>
+
+            <p>Many thanks to <a href="https://github.com/tonybaroneee" class="user-mention">@tonybaroneee</a>, <a href="https://github.com/joshgordon" class="user-mention">@joshgordon</a>, <a href="https://github.com/se-bastiaan" class="user-mention">@se-bastiaan</a>, <a href="https://github.com/codingismy11to7" class="user-mention">@codingismy11to7</a>, <a href="https://github.com/apfelbox" class="user-mention">@apfelbox</a>, and all of the contributors and users!</p>
         </div>
         </span>
 
